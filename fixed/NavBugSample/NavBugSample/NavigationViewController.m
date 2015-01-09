@@ -63,4 +63,9 @@
 }
 
 
+- (void)dealloc
+{
+    [self.interactivePopGestureRecognizer removeObserver:self forKeyPath:@"state"];
+}
+
 @end
